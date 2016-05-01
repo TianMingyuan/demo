@@ -3,5 +3,6 @@ class HomeController < ApplicationController
   end
 
   def show
+  	@users = User.all
   end
 end

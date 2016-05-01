@@ -1,2 +1,8 @@
-<h1>Home#show</h1>
-<p>Find me in app/views/home/show.html.erb</p>
+<h1>ユーザ一覧画面</h1>
+<ul>
+	<% @users.each do |user| %>
+	<li>
+		<%= link_to user.email %>
+	</li>
+	<% end %>
+</ul>
